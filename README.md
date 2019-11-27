@@ -15,12 +15,25 @@ An Android Application for collecting the information of visitor and host so tha
 4) when user click on checkIn button , this will send request to the server(https://github.com/peruljain/management_app_server) and following information will send to the Host.
 
 **Information to Host**
-Name
-Email
-Phone
-CheckIn-Time
-CheckOut-Time
+1) Name
 
-All above information will be saved in django server.
+2) Email
+
+3) Phone
+
+4) CheckIn-Time
+
+5)CheckOut-Time
+
+All above information will be saved in django server(Sqlite Database).
 
 5) After Clicking on check-In user will get this Screen.
+
+![Test Image 2](Screenshot_20191127-165641_innovaccer.jpg)
+
+Important Corner Case
+
+Until User will not checkout till that time the above screen will be there.
+
+How I achive this?
+By Using SharedPreference method in Android (It can be done by Django rest Api).
