@@ -40,15 +40,15 @@ By Using SharedPreference method in Android (It can be done by Django rest Api).
 
 6) When user click on checkout , the following information mail to the user email-id with the help of smtp(https://github.com/peruljain/management_app_server).
 
-1) Name
+   1. Name
 
-2) Hostname
+   2. Hostname
 
-3) Phone
+   3. Phone
 
-4) CheckIn-Time
+   4. CheckIn-Time
 
-5) CheckOut-Time
+   5. CheckOut-Time
 
-6) Address visited
+   6. Address visited
 
