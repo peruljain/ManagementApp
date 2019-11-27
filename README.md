@@ -1,6 +1,6 @@
-£Entry Management App
+#Entry Management App
 
-££The Goal :
+##The Goal :
 
 An Android Application for collecting the information of visitor and host so that there is a record of every visitor in Office.This App will
 be used in various cases . For Example - An appointment app which will be used by doctors also for track the record of appointment.This Application 
