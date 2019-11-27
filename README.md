@@ -53,3 +53,6 @@ By Using SharedPreference method in Android (It can be done by Django rest Api).
 
    6. Address visited
 
+CheckIn-Time and CheckOut Time will be saved in database corresponding to clicks on checkin and checkout button respectively.
+
+All backend code will be here : https://github.com/peruljain/management_app_server.
