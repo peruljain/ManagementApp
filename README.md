@@ -33,7 +33,8 @@ All above information will be saved in django server(Sqlite Database).
 
 Important Corner Case
 
-Until User will not checkout till that time the above screen will be there.
+a) Until User will not checkout till that time the above screen will be there.
+b) If user will close the app and again open the app then same screen as shown above will open until user checksout.
 
 How I achive this?
 By Using SharedPreference method in Android (It can be done by Django rest Api).
