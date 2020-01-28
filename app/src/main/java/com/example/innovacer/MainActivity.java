@@ -1,5 +1,6 @@
 package com.example.innovacer;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("Email",Vemail);
                 editor.putBoolean("CheckIn",true);
-                editor.commit();
+                editor.apply();
 
                 //building retrofit object
                 Retrofit retrofit = new Retrofit.Builder()
@@ -115,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     @Override
-                    public void onResponse(Call<ResponseApi> call, Response<ResponseApi> response) {
+                    public void onResponse(@NonNull Call<ResponseApi> call,@NonNull Response<ResponseApi> response) {
 
                         Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_LONG).show();
 
@@ -125,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(Call<ResponseApi> call, Throwable t) {
+                    public void onFailure(@NonNull Call<ResponseApi> call, Throwable t) {
                         Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
                         Intent i = new Intent(getApplicationContext(), CheckOut.class);
                         startActivity(i);
